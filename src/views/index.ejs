@@ -3,6 +3,10 @@
   
   <h1><%= title %></h1>
 
+  <%- include('summary', {account: accounts.checking}); %>
+  <%- include('summary', {account: accounts.savings}); %>
+  <%- include('summary', {account: accounts.credit}); %>
+
   <a href="/profile">Profile</a>
 </div>
 <br />
